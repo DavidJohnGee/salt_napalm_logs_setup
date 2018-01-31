@@ -1,0 +1,6 @@
+transport: zmq
+log_level: info
+port: 514
+disable_security: true
+publish_port: 5678
+publish_address: 0.0.0.0

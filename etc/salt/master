@@ -1,0 +1,14 @@
+file_roots:
+  base:
+    - /srv/salt
+
+pillar_roots:
+  base:
+    - /srv/pillar
+
+fileserver_backend:
+  - roots
+
+reactor:
+  - 'napalm/syslog/junos/CONFIGURATION_COMMIT_REQUESTED/*':
+    - /srv/reactor/get_version.sls

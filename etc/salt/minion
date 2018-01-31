@@ -1,0 +1,8 @@
+master: localhost
+id: minion1
+engines:
+  - napalm_syslog:
+      transport: zmq
+      address: localhost
+      port: 5678
+      disable_security: true
